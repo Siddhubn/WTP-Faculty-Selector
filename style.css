@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #0d0d0d, #000000);
+    margin: 0;
+    color: #00ffee;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ffee;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    width: 400px;
+}
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00ffee;
+    text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+}
+
+button {
+    background: linear-gradient(45deg, #ff0099, #00ffee);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffee, 0 0 30px #ff0099;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffee, 0 0 40px #ff0099;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 6px solid rgba(0, 255, 255, 0.2);
+    border-top: 6px solid #00ffee;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: none;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #00ffee, 0 0 20px #ff0099;
+    transition: 0.5s;
+}
+
